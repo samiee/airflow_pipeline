@@ -4,8 +4,8 @@ from airflow import DAG
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators import (StageToRedshiftOperator,LoadFactOperator,LoadDimensionOperator,DataQualityOperator,StageToRedshiftOperator)
 from helpers import SqlQueries
-AWS_KEY = os.environ.get('AKIA4A5QDZRV6UAMWA6W')
-AWS_SECRET = os.environ.get('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')
+AWS_KEY = os.environ.get('###')
+AWS_SECRET = os.environ.get('####')
 
 default_args = {
     'owner': 'udacity',
